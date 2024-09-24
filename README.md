@@ -23,7 +23,7 @@ Some root macros of reading simulation trees can be found in `readTree`.
 1. `compile processVirtual.cc`
 2. `./processVritual input_root_file output_root_file`
 
-To draw plots, please modify the `draw.sh`. There are some variables defined in this script.
+To draw plots, please modify the `draw.zsh`. There are some variables defined in this script.
 ```bash
 # POW and MULT are used to calculate the number of generated events 
 # nevent = MULT * pow(10, POW)
