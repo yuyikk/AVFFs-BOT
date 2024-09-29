@@ -34,21 +34,21 @@ class StandardDetectorSD : public G4VSensitiveDetector
         std::vector<int> fPTID;
         std::vector<int> fDID;
         std::vector<int> fProcessID;
-        std::vector<double> fX;
-        std::vector<double> fY;
-        std::vector<double> fZ;
-        std::vector<double> fPx;
-        std::vector<double> fPy;
-        std::vector<double> fPz;
-        std::vector<double> fTime;
-        std::vector<double> fEdep;
-        std::vector<double> fTrackL;
-        std::vector<double> fVx;
-        std::vector<double> fVy;
-        std::vector<double> fVz;
-        std::vector<double> fOutx;
-        std::vector<double> fOuty;
-        std::vector<double> fOutz;
+        std::vector<float> fX;
+        std::vector<float> fY;
+        std::vector<float> fZ;
+        std::vector<float> fPx;
+        std::vector<float> fPy;
+        std::vector<float> fPz;
+        std::vector<float> fTime;
+        std::vector<float> fEdep;
+        std::vector<float> fTrackL;
+        std::vector<float> fVx;
+        std::vector<float> fVy;
+        std::vector<float> fVz;
+        std::vector<float> fOutx;
+        std::vector<float> fOuty;
+        std::vector<float> fOutz;
 
 };
 #endif
