@@ -38,7 +38,7 @@ G4int GetHCalLayerId(G4int copyNum);
 G4int ConvertCopyNumber(G4int copyNum, G4int axis);
 TOFSD::TOFSD(G4String name, G4String abbrev) : StandardDetectorSD(name, abbrev), fTotalEdep(0), fTotalTrackLength(0)
 {
-  collectionName.insert("TOFCollection");
+  collectionName.insert("TOFSDColl");
 }
 TOFSD::~TOFSD()
 {
@@ -55,7 +55,7 @@ void TOFSD::Initialize(G4HCofThisEvent *HCE)
     fRegistered = true;
   }
   fHitsCollection = new StandardHitsCollection(SensitiveDetectorName, collectionName[0]);
-  fTOFHitsCollection = new TOFHitsCollection(SensitiveDetectorName, collectionName[0]);
+  fTOFHitsCollection = new TOFHitsCollection(SensitiveDetectorName, collectionName[1]);
   G4int HCID = G4SDManager::GetSDMpointer()->GetCollectionID(fHitsCollection);
   HCE->AddHitsCollection(HCID, fHitsCollection);
   HCID = G4SDManager::GetSDMpointer()->GetCollectionID(fTOFHitsCollection);
