@@ -15,7 +15,7 @@
 #include "Randomize.hh"
 #include "TString.h"
 #include <time.h>
-#include "TH1I.h"
+#include "TH1D.h"
 // #include "GlobalVars.hh"
 
 using namespace std;
@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
     {
         ui->SessionStart();
     }
-    TH1I *h_event = new TH1I("h_event", "Number of events generated in the simulation", 1, 0, 1);
+    TH1D *h_event = new TH1D("h_event", "Number of events generated in the simulation", 1, 0, 1);
     h_event->SetBinContent(1, nEvent);
 
     // delete ui;
